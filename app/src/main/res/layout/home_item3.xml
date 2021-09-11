@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="400dp">
+
+
+    <ImageView
+        android:id="@+id/ivMainImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:id="@+id/tvTnaziv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivMainImage"
+        android:text="AAAAAAAAA"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTgrupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTnaziv"
+        android:text="AAAAAAAAAAAAA"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTcena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTgrupa"
+        android:text="800,00 din"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        />
+
+
+</RelativeLayout>

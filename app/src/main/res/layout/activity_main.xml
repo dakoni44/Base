@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- Toolbar is a standard toolbar for use within application content. -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/svHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/ivHeder"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    tools:srcCompat="@tools:sample/avatars[0]" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeRecycler2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ivHeder"/>
+
+
+                <TextView
+                    android:id="@+id/tvBrendovi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brendovi"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_below="@id/homeRecycler2"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/homeRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tvBrendovi"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/tvTrending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Najpopularnije"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@id/homeRecycler"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeRecycler3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tvTrending"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:id="@+id/ivDok"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                tools:srcCompat="@tools:sample/avatars[0]"
+                android:layout_below="@id/homeRecycler3"
+                android:scaleType="fitXY"
+                android:padding="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Dokumenta"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_above="@id/bDok"
+                android:layout_alignLeft="@id/bDok"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/bDok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ivDok"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rounded_button"
+                android:text="View"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:layout_below="@id/ivDok"
+                android:layout_marginTop="50dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvKontakt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRGOVINSKO PREDUZEĆE CRVENA ZVEZDA KOMERC D.O.O. EXPORT-IMPORT"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvKontakt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trg Republike 14, Smederevo"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:layout_below="@id/tvKontakt1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvKontakt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+381 26 640 240"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:layout_below="@id/tvKontakt2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvKontakt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kontaktirajte nas"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:layout_below="@id/tvKontakt3"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/drawerPane"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/white">
+
+
+            <ExpandableListView
+                android:id="@+id/left_drawer"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice" />
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

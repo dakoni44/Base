@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CZV-Komerc</string>
+    <string name="Home">Home</string>
+    <string name="IndPre">Industrijski premazi</string>
+    <string name="GradjPre">Gradjevinski premazi</string>
+    <string name="AutProg">Autoprogram</string>
+    <string name="Brendovi">Brendovi</string>
+    <string name="Dokumenta">Dokumenta</string>
+    <string name="Kontakt">Kontakt</string>
+
+    <string-array name="IndPre">
+        <item>Industrijski premazi za metal</item>
+        <item>Industrijski premazi za drvo</item>
+        <item>Industrijski premazi za gradjevinu</item>
+        <item>Industrijski premazi za specijalne namene</item>
+    </string-array>
+
+    <string-array name="GradjPre">
+        <item>Premazi za enterijer i eksterijer</item>
+        <item>Izolacioni materijali</item>
+        <item>Lepkov, glet mase i ispunjivaci</item>
+        <item>Prateci alat i pribor</item>
+    </string-array>
+
+    <string-array name="AutProg">
+        <item>Zavrsne boje i lakovi</item>
+        <item>Pripremni materijali</item>
+        <item>Prateci alat i pribor</item>
+    </string-array>
+</resources>
